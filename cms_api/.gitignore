@@ -1,0 +1,40 @@
+# Python 缓存文件
+__pycache__/
+*.py[cod]
+*.pyo
+
+# 虚拟环境
+venv/
+.env
+*.env
+
+# IDE 配置文件
+.vscode/
+.idea/
+
+# 日志文件
+*.log
+
+# 数据库文件
+*.sqlite3
+
+# 测试覆盖率报告
+htmlcov/
+.coverage
+*.cover
+*.py,cover
+
+# 静态文件
+staticfiles/
+mediafiles/
+
+# Docker
+*.pid
+*.tar
+*.bak
+
+# 临时文件
+*.swp
+*.swo
+.DS_Store
+Thumbs.db

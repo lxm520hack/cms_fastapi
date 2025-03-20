@@ -1,13 +1,19 @@
 {
   "name": "cms_fastapi",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A CMS project using FastAPI for backend and Vue for frontend",
   "scripts": {
+    "dev-vue": "pnpm --filter cms_vue dev", // 启动 Vue 开发服务器
+    "build-vue": "pnpm --filter cms_vue build", // 构建 Vue 项目
+    "serve-vue": "pnpm --filter cms_vue preview", // 预览构建后的 Vue 项目
+    "start-api": "uvicorn cms_api.main:app --reload", // 启动 FastAPI 开发服务器
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["cms", "fastapi", "vue", "pnpm"],
+  "author": "Your Name",
   "license": "ISC",
-  "packageManager": "pnpm@10.4.1"
+  "packageManager": "pnpm@10.4.1",
+  "workspaces": [
+    "cms_vue"
+  ]
 }
